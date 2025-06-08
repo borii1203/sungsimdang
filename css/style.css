@@ -3,3 +3,206 @@
 @import url('common.css');
 @import url('../font/stylesheet.css');
 
+@keyframes wiggle {
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* main_visual */
+.main_visual {
+    height: 100vh;
+    position: relative;
+}
+
+.main_visual .mainSwiper {
+    height: 100%;
+}
+
+.main_visual .mainSwiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.main_visual .mainSwiper .text {
+    width: 100%;
+    height: 60rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main_visual .mainSwiper .text span {
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: 'Shilla_Culture(M)';
+    color: #222;
+}
+
+
+
+
+/* section_01 */
+.section_01 {
+    height: 100vh;
+    position: relative;
+}
+
+.section_01_bg {
+    width: 100%;
+    height: 100%;
+    background: url('../img/section01_bg.png') center top / cover no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 50%;
+}
+
+.section_01 .title {
+    text-align: center;
+    padding-top: 15rem;
+}
+
+.section_01 .title span {
+    display: block;
+    font-family: 'Shilla_Culture(M)';
+    font-size: 2.4rem;
+    margin-top: 3.2rem;
+}
+
+.section_01 .project_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 26px;
+    margin-top: 10rem;
+}
+
+.section_01 .project_wrap .project {
+    width: 23.44vw;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.section_01 .project_wrap .project img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 15.62vw;
+}
+
+.section_01 .project_wrap .project a {
+    width: 100%;
+    height: 6.61vw;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+}
+
+
+
+/* section_02 */
+.section_02 {
+    background: url('../img/section02_bg.jpg') 0 0 / cover no-repeat;
+    padding-block: 100px;
+    overflow-x: hidden;
+}
+
+.section_02 .title p {
+    font-size: 2rem;
+    margin-top: 4px;
+}
+
+.section_02 .top5 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.section_02 .item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section_02 .item_wrapper:nth-child(odd) .item {
+    transform: translateX(130px);
+    text-align: end;
+}
+
+.section_02 .item_wrapper:nth-child(even) {
+    align-self: flex-start;
+}
+
+.section_02 .item_wrapper:nth-child(even) .item {
+        transform: translateX(-130px);
+}
+
+.section_02 .item_wrapper:nth-child(odd) .item .info {
+    order: -1;
+}
+
+.section_02 .item strong {
+    font-size: 2.8rem;
+}
+
+.section_02 .item .more {
+    font-size: 2rem;
+    margin-top: 8px;
+    word-break: keep-all;
+}
+
+.section_02 .item img {
+    animation: wiggle 2.3s linear infinite;
+}
+
+
+
+/* section_04 */
+.section_04 {
+    overflow-x: hidden;
+    margin: 200px 0;
+}
+
+.section_04 .brand_wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 6.8rem;
+    margin-top: 15rem;
+
+    animation: slide 30s linear infinite;
+}
+
+.section_04 .brand_wrap img {
+    display: block;
+    transition-timing-function: linear;
+}

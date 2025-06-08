@@ -17,11 +17,10 @@
 }
 
 @font-face {
-    font-family: 'Gabia Gosran';
-    src: url('GabiaGosran-Regular.woff2') format('woff2'),
-        url('GabiaGosran-Regular.woff') format('woff');
+    font-family: 'Gowun Dodum';
+    src: url('GowunDodum-Regular.woff2') format('woff2'),
+        url('GowunDodum-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-

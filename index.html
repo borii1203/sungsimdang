@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="lib/jquery-3.7.1.min.js"></script>
@@ -17,15 +18,10 @@
     <script src="js/common.js"></script>
     <script>
         $(function () {
-            var swiper = new Swiper(".mainSwiper", {
-                loop: true,
-                effect: "fade",
-                pagination: {
-                    el: ".swiper-pagination",
-                },
-            });
+            AOS.init();
         });//script end
     </script>
+
 </head>
 
 <body>
@@ -40,7 +36,7 @@
                 <div class="swiper mainSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="img/main_visual01.jpg" alt="성심당은 대전의 문화입니다">
+                            <img src="img/main_visual01.png" alt="성심당은 대전의 문화입니다">
 
                             <div class="text">
                                 <h3>“성심당은 대전의 문화입니다”</h3>
@@ -48,13 +44,12 @@
                                 <span>1956년, 대전역 앞 작은 찐빵집에서 시작된 성심당은<br>
                                     대전시민의 자부심과 사랑으로 성장하여 대전을 대표하는 향토기업이 되었습니다.<br>
                                     우리 가톨릭 정신을 바탕으로 지역 사회에 봉사하는 가치 있는 기업이 되며,<br>'맛있는 빵, 경이로운 빵, 생명의 빵' 을 통해 '사랑의 문화' 를
-                                    이루어
-                                    가겠습니다.</span>
+                                    이루어 가겠습니다.</span>
                             </div><!-- .text end -->
                         </div>
 
                         <div class="swiper-slide">
-                            <img src="img/main_visual01.jpg" alt="성심당은 대전의 문화입니다">
+                            <img src="img/main_visual02.jpg" alt="밀가루 두 포대의 기적,대전의 문화가 되다">
                         </div>
 
                         <div class="swiper-slide">
@@ -69,6 +64,143 @@
                     <div class="swiper-pagination"></div>
                 </div><!-- .mainSwiper end -->
             </section><!-- .main_visual end -->
+
+            <section class="section_01">
+                <div class="inner">
+                    <div class="title" data-aos="fade-up" data-aos-duration="2000">
+                        <h3>모든 이가 다 좋게 여기는 일을 하십시오</h3>
+
+                        <span>1999년, 성심당은 모두를 위한경제 EoC(Economy of Communion)를 만나<br>사랑과 나눔의 경영방식을 이루어 가고 있습니다.</span>
+                    </div><!-- .title end -->
+
+                    <div class="project_wrap">
+                        <div class="pj_01 project" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                            <img src="img/section01_item01.png" alt="EoC(모두를 위한 경제)">
+
+                            <a href="#" class="pj_name">
+                                EoC(모두를 위한 경제)
+                            </a><!-- .pj_name end -->
+                        </div><!-- .pj_01 end -->
+
+                        <div class="pj_02 project" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+                            <img src="img/section01_item02.png" alt="무지개 프로젝트">
+
+                            <a href="#" class="pj_name">
+                                무지개 프로젝트
+                            </a><!-- .pj_name end -->
+                        </div><!-- .pj_02 end -->
+
+                        <div class="pj_03 project" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
+                            <img src="img/section01_item03.png" alt="에코 성심 프로젝트">
+
+                            <a href="#" class="pj_name">
+                                에코 성심 프로젝트
+                            </a><!-- .pj_name end -->
+                        </div><!-- .pj_03 end -->
+                    </div><!-- .project_wrap end -->
+                </div><!-- .inner end -->
+
+                <div class="section_01_bg"></div>
+            </section><!-- .section_01 end -->
+
+            <section class="section_02">
+                <div class="inner">
+                    <div class="title" data-aos="fade-up" data-aos-duration="2000">
+                        <h5>명예의 전당</h5>
+                        <p>성심당에서 가장 맛있는 빵 BEST 5</p>
+                    </div><!-- .title end -->
+                </div><!-- .inner end -->
+
+                <div class="top5">
+                    <div class="item_wrapper" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="item item_01">
+                            <img src="img/best_01.png" alt="순수롤">
+
+                            <div class="info">
+                                <strong>순수롤</strong>
+                                <p class="more">성심당케익부띠끄의 NO.1 롤 케이크. 100% 순우유 생크림과<br> 부드러운 카스텔라의 클래식한 조화! 케익부띠끄의 시그니처
+                                    케익
+                                </p>
+                            </div><!-- .info end -->
+                        </div><!-- .item_01 end -->
+                    </div><!-- .item_wrapper end -->
+
+
+                    <div class="item_wrapper" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="350">
+                        <div class="item item_02">
+                            <img src="img/best_02.png" alt="토요빵">
+
+                            <div class="info">
+                                <strong>토요빵</strong>
+                                <p class="more">자색 고구마의 달콤한 맛과 타피오카의 쫀득한 식감이 조화로운 성심당 인기빵! </p>
+                            </div><!-- .info end -->
+                        </div><!-- .item_02 end -->
+                    </div><!-- .item_wrapper end -->
+
+                    <div class="item_wrapper" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="350">
+                        <div class="item item_03">
+                            <img src="img/best_03.png" alt="튀김 소보로">
+
+                            <div class="info">
+                                <strong>튀김 소보로</strong>
+                                <p class="more">1980년 탄생 소보로, 앙금빵, 도넛의 3단 합체빵.<br>하나의 빵으로 3가지 맛을 즐기실 수 있는성심당 No.1 튀김소보로
+                                    입니다.
+                                </p>
+                            </div><!-- .info end -->
+                        </div><!-- .item_03 end -->
+                    </div><!-- .item_wrapper end -->
+
+                    <div class="item_wrapper" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="350">
+                        <div class="item item_04">
+                            <img src="img/best_04.png" alt="순수롤">
+
+                            <div class="info">
+                                <strong>보문산 메아리</strong>
+                                <p class="more">한겹 한겹 보드라운 빵결에 골드럼 시럽이 섬세하게 발려져 있어 깊은 풍미를 느끼실 수 있답니다.</p>
+                            </div><!-- .info end -->
+                        </div><!-- .item_04 end -->
+                    </div><!-- .item_wrapper end -->
+                </div><!-- .top5 end -->
+            </section><!-- .section_02 end -->
+
+            <section class="section_03">
+                <div class="inner">
+                    <div class="title">
+                        <h5>성심당 미디어</h5>
+                        <a href="#">더보기</a>
+                    </div><!-- .title end -->
+
+                    <div class="media_wrap">
+
+                    </div><!-- .media_wrap end -->
+                </div><!-- .inner end -->
+            </section><!-- .section_03 end -->
+
+            <section class="section_04">
+                <div class="inner">
+                    <div class="title">
+                        <h5>성심당 패밀리 브랜드</h5>
+                    </div><!-- .title end -->
+                </div><!-- .inner end -->
+
+                <div class="brand_wrap">
+                    <img src="img/b_logo1.png" alt="오븐스토리">
+                    <img src="img/b_logo2.png" alt="삐아또">
+                    <img src="img/b_logo3.png" alt="테라스키친">
+                    <img src="img/b_logo4.png" alt="플라잉팬">
+                    <img src="img/b_logo5.png" alt="우동야">
+                    <img src="img/b_logo6.png" alt="오븐스토리">
+                    <img src="img/b_logo1.png" alt="오븐스토리">
+                    <img src="img/b_logo2.png" alt="삐아또">
+                    <img src="img/b_logo3.png" alt="테라스키친">
+                    <img src="img/b_logo4.png" alt="플라잉팬">
+                    <img src="img/b_logo5.png" alt="우동야">
+                    <img src="img/b_logo6.png" alt="오븐스토리">
+                </div><!-- .brand_wrap end -->
+            </section><!-- .section_04 end -->
+
+            <footer class="footer">
+            </footer><!-- .footer end -->
         </main><!-- .main end -->
     </div><!-- #wrap end -->
 </body>

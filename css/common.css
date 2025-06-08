@@ -1,6 +1,6 @@
 html,
 body {
-    font-family: 'Gabia Gosran';
+    font-family: 'Gowun Dodum';
     font-size: 62.5%;
     letter-spacing: -0.02rem;
     line-height: 1.5;
@@ -10,6 +10,12 @@ body {
 h3 {
     font-size: 8rem;
     font-family: 'Shilla_Culture(B)';
+    text-align: center;
+}
+
+h5 {
+    font-size: 5.2rem;
+    font-weight: bold;
 }
 
 .inner {
@@ -18,9 +24,17 @@ h3 {
     margin: 0 auto;
 }
 
+
+
+/* header */
 .header {
+    width: 100%;
     background-color: #000;
     height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 
 .header .inner {
@@ -80,11 +94,14 @@ h3 {
     width: 100%;
     padding: 16px;
     color: #111;
-    font-size: 16px;
 
     transform: scaleY(0);
     transform-origin: top;
     transition: 0.3s;
+}
+
+.depth_02 li a {
+    font-size: 1.6rem;
 }
 
 .depth_02.down {
@@ -150,4 +167,45 @@ h3 {
 .header .nav_bg span {
     position: absolute;
     left: -99999px;
+}
+
+
+
+/* footer */
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer .f_logo {
+    padding-top: 40px;
+}
+
+.footer .f_logo img {
+    width: 25.7rem;
+}
+
+.footer ul {
+    width: 100%;
+    margin-top: 14px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.footer .num {
+    color: #C69C6D;
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.footer .copyright {
+    display: block;
+    padding-block: 16px;
+    padding-bottom: 40px;
 }

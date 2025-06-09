@@ -19,6 +19,29 @@
     <script>
         $(function () {
             AOS.init();
+
+            var swiper = new Swiper(".mediaSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                    },
+                },
+            });
         });//script end
     </script>
 
@@ -74,29 +97,35 @@
                     </div><!-- .title end -->
 
                     <div class="project_wrap">
-                        <div class="pj_01 project" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
-                            <img src="img/section01_item01.png" alt="EoC(모두를 위한 경제)">
+                        <a href="#">
+                            <div class="pj_01 project" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                                <img src="img/section01_item01.png" alt="EoC(모두를 위한 경제)">
 
-                            <a href="#" class="pj_name">
-                                EoC(모두를 위한 경제)
-                            </a><!-- .pj_name end -->
-                        </div><!-- .pj_01 end -->
+                                <span>
+                                    EoC(모두를 위한 경제)
+                                </span>
+                            </div><!-- .pj_01 end -->
+                        </a>
 
-                        <div class="pj_02 project" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
-                            <img src="img/section01_item02.png" alt="무지개 프로젝트">
+                        <a href="#">
+                            <div class="pj_02 project" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+                                <img src="img/section01_item02.png" alt="무지개 프로젝트">
 
-                            <a href="#" class="pj_name">
-                                무지개 프로젝트
-                            </a><!-- .pj_name end -->
-                        </div><!-- .pj_02 end -->
+                                <span>
+                                    무지개 프로젝트
+                                </span>
+                            </div><!-- .pj_02 end -->
+                        </a>
 
-                        <div class="pj_03 project" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
-                            <img src="img/section01_item03.png" alt="에코 성심 프로젝트">
+                        <a href="#">
+                            <div class="pj_03 project" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
+                                <img src="img/section01_item03.png" alt="에코 성심 프로젝트">
 
-                            <a href="#" class="pj_name">
-                                에코 성심 프로젝트
-                            </a><!-- .pj_name end -->
-                        </div><!-- .pj_03 end -->
+                                <span>
+                                    에코 성심 프로젝트
+                                </span>
+                            </div><!-- .pj_03 end -->
+                        </a>
                     </div><!-- .project_wrap end -->
                 </div><!-- .inner end -->
 
@@ -165,20 +194,104 @@
 
             <section class="section_03">
                 <div class="inner">
-                    <div class="title">
+                    <div class="title" data-aos="fade-right" data-aos-duration="3000">
                         <h5>성심당 미디어</h5>
                         <a href="#">더보기</a>
                     </div><!-- .title end -->
 
-                    <div class="media_wrap">
+                    <div class="media_wrap pc" data-aos="fade-left" data-aos-duration="3000">
+                        <div class="media">
+                            <a href="#">
+                                <div class="image_wrap">
+                                    <img src="img/media_01.jpg" alt="[2025 시무식] 성심당 직원들과 함께한 빛의 물결 - 걱정 말아요, 그대">
+                                </div>
+                                <strong>[2025 시무식] 성심당 직원들과 함께한 빛의 물결 - 걱정 말아요, 그대</strong>
+                            </a>
+                        </div>
 
+                        <div class="media">
+                            <a href="#">
+                                <div class="image_wrap">
+                                    <img src="img/media_02.jpg" alt="[2024 크리스마스] 성심당의 크리스마스는 어땠을까? ㅣ 성심당 크리스마스 스케치 영상">
+                                </div>
+                                <strong>[2024 크리스마스] 성심당의 크리스마스는 어땠을까? ㅣ 성심당 크리스마스 스케치 영상</strong>
+                            </a>
+                        </div>
+
+                        <div class="media">
+                            <a href="#">
+                                <div class="image_wrap">
+                                    <img src="img/media_03.png"
+                                        alt="[성심당 무화과시루] 무화과시루와 만날 날이 얼마 남지 않았어요! 마지막 무화과시루를 만나러 오세요~">
+                                </div>
+                                <strong>[성심당 무화과시루] 무화과시루와 만날 날이 얼마 남지 않았어요! 마지막 무화과시루를 만나러 오세요~</strong>
+                            </a>
+                        </div>
+
+                        <div class="media">
+                            <a href="#">
+                                <div class="image_wrap">
+                                    <img src="img/media_04.jpg" alt="[성심당 전설의 팥빙수] 초복•중복•말복엔 성심당에서 전설의 팥빙수로 더위나기!">
+                                </div>
+                                <strong>[성심당 전설의 팥빙수] 초복•중복•말복엔 성심당에서 전설의 팥빙수로 더위나기!</strong>
+                            </a>
+                        </div>
                     </div><!-- .media_wrap end -->
+
+                    <div class="media_wrapM mobile">
+                        <!-- Swiper -->
+                        <div class="swiper mediaSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/media_01.jpg" alt="[2025 시무식] 성심당 직원들과 함께한 빛의 물결 - 걱정 말아요, 그대">
+                                    <strong>[2025 시무식] 성심당 직원들과 함께한 빛의 물결 - 걱정 말아요, 그대</strong>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/media_02.jpg" alt="[2024 크리스마스] 성심당의 크리스마스는 어땠을까? ㅣ 성심당 크리스마스 스케치 영상">
+                                    <strong>[2024 크리스마스] 성심당의 크리스마스는 어땠을까? ㅣ 성심당 크리스마스 스케치 영상</strong>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/media_03.png"
+                                        alt="[성심당 무화과시루] 무화과시루와 만날 날이 얼마 남지 않았어요! 마지막 무화과시루를 만나러 오세요~">
+                                    <strong>[성심당 무화과시루] 무화과시루와 만날 날이 얼마 남지 않았어요! 마지막 무화과시루를 만나러 오세요~</strong>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/media_04.jpg" alt="[성심당 전설의 팥빙수] 초복•중복•말복엔 성심당에서 전설의 팥빙수로 더위나기!">
+                                    <strong>[성심당 전설의 팥빙수] 초복•중복•말복엔 성심당에서 전설의 팥빙수로 더위나기!</strong>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/media_04.jpg" alt="[성심당 전설의 팥빙수] 초복•중복•말복엔 성심당에서 전설의 팥빙수로 더위나기!">
+                                    <strong>[성심당 전설의 팥빙수] 초복•중복•말복엔 성심당에서 전설의 팥빙수로 더위나기!</strong>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/media_04.jpg" alt="[성심당 전설의 팥빙수] 초복•중복•말복엔 성심당에서 전설의 팥빙수로 더위나기!">
+                                    <strong>[성심당 전설의 팥빙수] 초복•중복•말복엔 성심당에서 전설의 팥빙수로 더위나기!</strong>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/media_04.jpg" alt="[성심당 전설의 팥빙수] 초복•중복•말복엔 성심당에서 전설의 팥빙수로 더위나기!">
+                                    <strong>[성심당 전설의 팥빙수] 초복•중복•말복엔 성심당에서 전설의 팥빙수로 더위나기!</strong>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/media_04.jpg" alt="[성심당 전설의 팥빙수] 초복•중복•말복엔 성심당에서 전설의 팥빙수로 더위나기!">
+                                    <strong>[성심당 전설의 팥빙수] 초복•중복•말복엔 성심당에서 전설의 팥빙수로 더위나기!</strong>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div><!-- .mediaSwiper end -->
+                    </div><!-- .media_wrapM end -->
                 </div><!-- .inner end -->
             </section><!-- .section_03 end -->
 
             <section class="section_04">
                 <div class="inner">
-                    <div class="title">
+                    <div class="title" data-aos="fade-up" data-aos-duration="3000">
                         <h5>성심당 패밀리 브랜드</h5>
                     </div><!-- .title end -->
                 </div><!-- .inner end -->
@@ -198,6 +311,17 @@
                     <img src="img/b_logo6.png" alt="오븐스토리">
                 </div><!-- .brand_wrap end -->
             </section><!-- .section_04 end -->
+
+            <div class="btn_wrap">
+                <a href="#" class="cs">
+                    cs
+                </a>
+
+                <button type="button" class="top_btn">
+                    <img src="img/top_arrow.png" alt="탑 버튼">
+                </button>
+            </div><!-- .btn_wrap end -->
+
 
             <footer class="footer">
             </footer><!-- .footer end -->

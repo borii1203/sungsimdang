@@ -1,10 +1,16 @@
+@import url('../font/stylesheet.css');
+
 html,
 body {
     font-family: 'Gowun Dodum';
     font-size: 62.5%;
     letter-spacing: -0.02rem;
-    line-height: 1.5;
     color: #111;
+}
+
+body {
+    position: relative;
+    line-height: 1.5;
 }
 
 h3 {
@@ -13,7 +19,7 @@ h3 {
     text-align: center;
 }
 
-h5 {
+.title h5 {
     font-size: 5.2rem;
     font-weight: bold;
 }
@@ -68,6 +74,7 @@ h5 {
 .header .nav .gnb>li>a {
     line-height: 80px;
     text-align: center;
+    font-weight: bold;
     height: 100%;
     display: block;
 }
@@ -85,7 +92,7 @@ h5 {
     margin-right: 4px;
 }
 
-.depth_02 {
+.header .depth_02 {
     z-index: 9;
     height: 212px;
     position: absolute;
@@ -100,15 +107,15 @@ h5 {
     transition: 0.3s;
 }
 
-.depth_02 li a {
+.header .depth_02 li a {
     font-size: 1.6rem;
 }
 
-.depth_02.down {
+.header .depth_02.down {
     transform: scaleY(1);
 }
 
-.depth_02::before {
+.header .depth_02::before {
     content: '';
     display: block;
     height: 100%;
@@ -169,6 +176,73 @@ h5 {
     left: -99999px;
 }
 
+/* sub_top */
+.sub_top {
+    width: 100%;
+    height: 500px;
+    background: url('../img/sub_bg.png') center center / 100% no-repeat;
+}
+
+.sub_top .text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.sub_top h2 {
+    font-size: 42px;
+    text-align: center;
+}
+
+.sub_top .sub_nav {
+    padding-top: 18px;
+}
+
+.sub_top .sub_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub_top .sub_nav .home a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.sub_top .sub_nav .home img {
+    width: 24px;
+    display: block;
+}
+
+.sub_top .sub_nav li {
+    font-size: 14px;
+    padding-left: 20px;
+    margin-right: 12px;
+    position: relative;
+}
+
+.sub_top .sub_nav li:first-child::before {
+    display: none;
+}
+
+.sub_top .sub_nav li::before {
+    width: 12px;
+    height: 20px;
+    content: '';
+    display: block;
+    background: url('../img/arrow.png')0 0 /100% no-repeat;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 
 /* footer */
@@ -190,22 +264,79 @@ h5 {
 
 .footer ul {
     width: 100%;
-    margin-top: 14px;
+    margin-top: 8px;
     display: flex;
     align-content: center;
     justify-content: center;
     column-gap: 2rem;
 }
 
-.footer .num {
+.footer strong {
+    display: block;
     color: #C69C6D;
     font-size: 4rem;
     margin-top: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 4px;
 }
 
 .footer .copyright {
     display: block;
-    padding-block: 16px;
+    padding-block: 32px;
     padding-bottom: 40px;
+}
+
+.btn_wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    z-index: 99;
+}
+
+.cs {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C69C6D;
+    color: #fff;
+}
+
+.top_btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2.5px solid #4F2700;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.8s;
+}
+
+.top_btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.top_btn.color_wh {
+    background-color: #f8f0e5d0;
+}
+
+
+/* 반응형 */
+@media screen and (max-width:1400px) {
+
+    html,
+    body {
+        font-size: 56.25%;
+    }
 }

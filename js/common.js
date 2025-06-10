@@ -15,7 +15,7 @@ $(function () {
         let scrollbar = $(this).scrollTop();
 
         if (scrollbar > section01H) {
-            $topBtn.addClass('show');
+            $topBtn.addClass('show'); 
         } else {
             $topBtn.removeClass('show');
         }

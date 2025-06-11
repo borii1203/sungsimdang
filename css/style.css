@@ -26,6 +26,41 @@
     display: none;
 }
 
+
+/* popup */
+#popup {
+    width: 500px;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 9999;
+}
+
+#popup .image {
+    position: relative;
+}
+
+#popup img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+#popup .close_btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 0;
+    cursor: pointer;
+}
+
+#popup .close_btn img {
+    width: 35px;
+    height: 35px;
+}
+
+
 /* main_visual */
 .main_visual {
     height: 100vh;
